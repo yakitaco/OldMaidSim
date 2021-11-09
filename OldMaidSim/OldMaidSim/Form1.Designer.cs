@@ -60,7 +60,7 @@ namespace OldMaidSim {
             this.flowLayoutPanel1.Controls.Add(this.listBox12);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 12);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(776, 426);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(776, 392);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // listBox1
@@ -121,7 +121,7 @@ namespace OldMaidSim {
             // 
             this.listBox7.FormattingEnabled = true;
             this.listBox7.ItemHeight = 12;
-            this.listBox7.Location = new System.Drawing.Point(3, 105);
+            this.listBox7.Location = new System.Drawing.Point(3, 97);
             this.listBox7.Name = "listBox7";
             this.listBox7.Size = new System.Drawing.Size(120, 88);
             this.listBox7.TabIndex = 6;
@@ -130,7 +130,7 @@ namespace OldMaidSim {
             // 
             this.listBox8.FormattingEnabled = true;
             this.listBox8.ItemHeight = 12;
-            this.listBox8.Location = new System.Drawing.Point(129, 105);
+            this.listBox8.Location = new System.Drawing.Point(129, 97);
             this.listBox8.Name = "listBox8";
             this.listBox8.Size = new System.Drawing.Size(120, 88);
             this.listBox8.TabIndex = 7;
@@ -139,7 +139,7 @@ namespace OldMaidSim {
             // 
             this.listBox9.FormattingEnabled = true;
             this.listBox9.ItemHeight = 12;
-            this.listBox9.Location = new System.Drawing.Point(255, 105);
+            this.listBox9.Location = new System.Drawing.Point(255, 97);
             this.listBox9.Name = "listBox9";
             this.listBox9.Size = new System.Drawing.Size(120, 88);
             this.listBox9.TabIndex = 8;
@@ -148,7 +148,7 @@ namespace OldMaidSim {
             // 
             this.listBox10.FormattingEnabled = true;
             this.listBox10.ItemHeight = 12;
-            this.listBox10.Location = new System.Drawing.Point(381, 105);
+            this.listBox10.Location = new System.Drawing.Point(381, 97);
             this.listBox10.Name = "listBox10";
             this.listBox10.Size = new System.Drawing.Size(120, 88);
             this.listBox10.TabIndex = 9;
@@ -157,7 +157,7 @@ namespace OldMaidSim {
             // 
             this.listBox11.FormattingEnabled = true;
             this.listBox11.ItemHeight = 12;
-            this.listBox11.Location = new System.Drawing.Point(507, 105);
+            this.listBox11.Location = new System.Drawing.Point(507, 97);
             this.listBox11.Name = "listBox11";
             this.listBox11.Size = new System.Drawing.Size(120, 88);
             this.listBox11.TabIndex = 10;
@@ -166,7 +166,7 @@ namespace OldMaidSim {
             // 
             this.listBox12.FormattingEnabled = true;
             this.listBox12.ItemHeight = 12;
-            this.listBox12.Location = new System.Drawing.Point(633, 105);
+            this.listBox12.Location = new System.Drawing.Point(633, 97);
             this.listBox12.Name = "listBox12";
             this.listBox12.Size = new System.Drawing.Size(120, 88);
             this.listBox12.TabIndex = 11;
