@@ -37,7 +37,7 @@ namespace OldMaidSim {
         }
 
         // 山から一枚引く
-        public Card drawFromDeck() {
+        public static Card drawFromDeck() {
             Card ret = null;
             if (deck.Count > 0) {
                 ret = deck[0];
@@ -56,6 +56,9 @@ namespace OldMaidSim {
             deck = deck.OrderBy(i => Guid.NewGuid()).ToList();
         }
 
+        public static int deckNum() {
+            return deck.Count;
+        }
 
     }
 
