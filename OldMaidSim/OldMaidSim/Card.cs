@@ -12,7 +12,7 @@ namespace OldMaidSim {
         CLUB = 4,
     }
     // トランプのカード
-    class Card {
+    public class Card {
 
         static List<Card> deck = new List<Card>();
         public int number; // 数 (1-13 Jokerは0)
@@ -20,8 +20,8 @@ namespace OldMaidSim {
 
         // トランプの初期化
         static Card() {
-            for (int tmpSuit = 0; tmpSuit < 5; tmpSuit++) {
-                for (int tmpNum = 0; tmpNum < 14; tmpNum++) {
+            for (int tmpSuit = 1; tmpSuit < 5; tmpSuit++) {
+                for (int tmpNum = 1; tmpNum < 14; tmpNum++) {
                     new Card(tmpNum, (SUIT)tmpSuit);
                 }
             }

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace OldMaidSim {
     class player {
@@ -12,6 +8,8 @@ namespace OldMaidSim {
             myCard = dealtCards;
         }
 
+        public virtual void pullCard(List<Card> beseCard) {
+        }
 
     }
 }
