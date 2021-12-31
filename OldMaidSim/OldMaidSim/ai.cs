@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace OldMaidSim {
     class ai : player {
-        List<Card> myCard;
+        public List<Card> myCard;
         Random rnd = new System.Random();
 
         public ai(List<Card> dealtCards) : base(dealtCards) {
@@ -35,9 +35,21 @@ namespace OldMaidSim {
             beseCard.RemoveAt(read);
         }
 
-
         // そろっているカードを捨てる
+        public override void removeCard() {
+            bool[] delFlg = new bool[myCard.Count];  // 捨てるカードフラグ
+            for (int j = 0; j < myCard.Count - 1; j++) {
+                if ((myCard[myCard.Count - 1].number == myCard[j].number) && (delFlg[j] == false)) {
+                    delFlg[myCard.Count - 1] = true;
+                    delFlg[j] = true;
+                    break;
+                }
+            }
+            for (int i = myCard.Count - 1; i >= 0; i--) {
+                if (delFlg[i] == true) myCard.RemoveAt(i);
+            }
 
+        }
 
     }
 }

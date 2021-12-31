@@ -52,23 +52,33 @@ namespace OldMaidSim {
             cnt = 0;
             while (pList.Count > 1) {
                 int ncnt = cnt + 1;
-                if (ncnt == pList.Count) ncnt = 0;
+                if (ncnt >= pList.Count) ncnt = 0;
 
-                pList[cnt].pullCard(dealCard[ncnt]);
+                pList[cnt].pullCard(pList[ncnt].myCard);
+
+                Form1.Form1Instance.dispCard(pList[cnt].myCard, cnt);
+                Form1.Form1Instance.dispCard(pList[ncnt].myCard, ncnt);
+                Thread.Sleep(1000);
+
+
+
+                pList[cnt].removeCard();
+
                 Debug.WriteLine("Next:");
-                Form1.Form1Instance.dispCard(dealCard[cnt], cnt);
-                Form1.Form1Instance.dispCard(dealCard[ncnt], ncnt);
+                Form1.Form1Instance.dispCard(pList[cnt].myCard, cnt);
 
-                
+                if (pList[cnt].myCard.Count == 0) pList.RemoveAt(cnt);
+                if (pList[ncnt].myCard.Count == 0) pList.RemoveAt(ncnt);
+
 
                 Thread.Sleep(1000);
 
                 cnt++;
-                if (cnt == pList.Count) cnt = 0;
+                if (cnt >= pList.Count) cnt = 0;
 
             }
 
-
+            Thread.Sleep(60000);
         }
     }
 }
